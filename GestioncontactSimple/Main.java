@@ -2,18 +2,18 @@ import java.util.ArrayList;
 
 class Main {
     public static void main(String[] args) {
-        ArrayList<Etudiant> list = new ArrayList<>();
-        list.add(new Etudiant("wiam", 21));
-        list.add(new Etudiant("yahya", 22));
-        list.add(new Etudiant("fati", 21));
+        ArrayList<GestionContact> list = new ArrayList<>();
+        list.add(new GestionContact("wiam", 06041574));
+        list.add(new GestionContact("yahya", 06041574));
+        list.add(new GestionContact("fati", 06041574));
         System.out.println("Affiche les info contact simple");
-        for (Etudiant etud : list) {
-            System.out.println("le nom est :"+etud.getNom() +"  " +"l'age est :"+ etud.getAge());
+        for (GestionContact etud : list) {
+            System.out.println("le nom est :"+etud.getNom() +"  " +"numero est :"+ etud.getNumero());
         }
         System.out.println("Supprime le contact simple de fati index 2");
         list.remove(2);
-        for (Etudiant etud : list) {
-            System.out.println(etud.getNom() + " :" + etud.getAge());
+        for (GestionContact etud : list) {
+            System.out.println(etud.getNom() + " :" + etud.getNumero());
         }
 
     }
