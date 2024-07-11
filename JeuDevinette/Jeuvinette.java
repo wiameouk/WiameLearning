@@ -9,16 +9,16 @@ class Jeuvinette{
         int nombreAleatoire = rand.nextInt(100) + 1;
         int nombreUtilisateur = 0; 
         System.out.println("Donne un nombre:");
-        while (nombreUtilisateur != nombreAleatoire) {
+        do{
             nombreUtilisateur = scanner.nextInt(); 
             if (nombreUtilisateur < nombreAleatoire) {
-                System.out.println("Nombre Aleatoire est plus que nombreUtilisateur "+nombreAleatoire);
+                System.out.println("Nombre Aleatoire est plus que nombreUtilisateur "+nombreAleatoire );
             } else if (nombreUtilisateur > nombreAleatoire) {
                 System.out.println("Nombre Aleatoire est moins que nombreUtilisateur "+nombreAleatoire);
             }else{
                 System.out.println("Nombre Aleatoire egale nombre utilisateur ");
             }
             
-        }
+        }while((nombreUtilisateur != nombreAleatoire) );
     }
 }
