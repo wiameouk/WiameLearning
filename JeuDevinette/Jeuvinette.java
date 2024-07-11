@@ -12,11 +12,11 @@ class Jeuvinette{
         do{
             nombreUtilisateur = scanner.nextInt(); 
             if (nombreUtilisateur < nombreAleatoire) {
-                System.out.println("Nombre Aleatoire est plus que nombreUtilisateur "+nombreAleatoire );
+                System.out.println("Nombre Aleatoire est plus que nombreUtilisateur: "+nombreAleatoire );
             } else if (nombreUtilisateur > nombreAleatoire) {
-                System.out.println("Nombre Aleatoire est moins que nombreUtilisateur "+nombreAleatoire);
-            }else{
-                System.out.println("Nombre Aleatoire egale nombre utilisateur ");
+                System.out.println("Nombre Aleatoire est moins que nombreUtilisateur :"+nombreAleatoire);
+            }else {
+                System.out.println("le nombre trouvé:" + nombreAleatoire);
             }
             
         }while((nombreUtilisateur != nombreAleatoire) );
