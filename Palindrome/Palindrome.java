@@ -6,14 +6,23 @@ class Palindrome{
         String chaine = scanner.nextLine();
         int  taille = chaine.length();
         char[] charArray = chaine.toCharArray();
-        for(int i = taille - 1, j = 0; i >= 0; i--,j++)
+        boolean verification=false;
+        for(int i = 0; i < taille/2; i++)
         {
-            if(charArray[i]==charArray[j]){
-                System.out.println(" palindrome");
+            if(charArray[i]==charArray[taille-1-i]){
+                verification=true;
                 break;  
-
             }
         }
+        if(verification==true)
+        {
+            System.out.println("Le mot est un palindrome.");
+        }
+        else{
+            System.out.println("Le mot n'est pas  un palindrome.");
+
+        }
+           
         
     }
   
