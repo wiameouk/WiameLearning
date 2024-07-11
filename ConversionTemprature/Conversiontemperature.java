@@ -1,15 +1,17 @@
 import java.util.Scanner;
 
-class Conversiontemperature{
-    public static void main(String[] args)
-    {
-        System.out.println("DegreTemp");
-        Scanner scanner = new Scanner(System.in); 
-        double degretemp= scanner.nextDouble() ;
-        double  fahrenheit=0;
-        System.out.println("Convertit DegreTemp Celsius à Fahrenheit.");
-        fahrenheit=(degretemp*1.8)+32;
-        System.out.println("Fahrenheit est : " +fahrenheit);
+class Conversiontemperature {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Donne Celsius : ");
+        double celsius = scanner.nextDouble();
+        double fahrenheit = (celsius * 1.8) + 32;
+        System.out.println("Convertit de celsius à fahrenheut est :"+ fahrenheit );
+        System.out.println("Donne Fahrenheit : ");
+        fahrenheit = scanner.nextDouble();
+        celsius = (fahrenheit - 32) / 1.8;
+        System.out.println("Convertit de celsius à fahrenheit est :"+ celsius );
 
+        
     }
 }
