@@ -1,18 +1,26 @@
 import java.util.Scanner;
 
-class Verificaionnombrepremier{
-    public static void main(String[] args){
+class Verificationnombrepremier {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Donner un nombre1");
-        int nombre1 = scanner.nextInt();
-        System.out.println("Donner un nombre1");
-        int nombre2 = scanner.nextInt();
-        if((nombre1==nombre2) && ((nombre1/nombre2)==1))
-        {
-            System.out.println("le nombre premier est:"+nombre1);
+        System.out.print("Donner un nombre: ");
+        int nombre = scanner.nextInt();
+        boolean VerificationNombrePremier = true;
+
+        if (nombre <= 1) {
+            VerificationNombrePremier = false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(nombre); i++) {
+                if (nombre % i == 0) {
+                    VerificationNombrePremier = false;
+                    break;
+                }
+            }
         }
-        else{
-            System.out.println("n'existe pas le nombre premier");
+        if (VerificationNombrePremier) {
+            System.out.println("Le nombre est un nombre premier" + nombre );
+        } else {
+            System.out.println("Le nombre  n'est pas un nombre premier" + nombre );
         }
     }
 }
