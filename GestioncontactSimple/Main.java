@@ -3,9 +3,9 @@ import java.util.ArrayList;
 class Main {
     public static void main(String[] args) {
         ArrayList<GestionContact> list = new ArrayList<>();
-        list.add(new GestionContact("wiam", 06041574));
-        list.add(new GestionContact("yahya", 06041574));
-        list.add(new GestionContact("fati", 06041574));
+        list.add(new GestionContact("wiam", "06041574"));
+        list.add(new GestionContact("yahya", "06041574"));
+        list.add(new GestionContact("fati", "06041574"));
         System.out.println("Affiche les info contact simple");
         for (GestionContact etud : list) {
             System.out.println("le nom est :"+etud.getNom() +"  " +"numero est :"+ etud.getNumero());

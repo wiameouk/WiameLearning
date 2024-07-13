@@ -1,8 +1,8 @@
 class GestionContact {
     public String nom;
-    public double numero;
+    public String numero;
 
-    public GestionContact(String nom, double numero) {
+    public GestionContact(String nom, String numero) {
         this.nom = nom;
         this.numero = numero;
     }
@@ -15,11 +15,11 @@ class GestionContact {
         return nom;
     }
 
-    public void setNumero(double numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
-    public double getNumero() {
+    public String getNumero() {
         return numero;
     }
 }
