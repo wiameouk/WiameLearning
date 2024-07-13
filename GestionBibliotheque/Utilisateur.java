@@ -26,5 +26,9 @@ public class Utilisateur {
         this.nom=nom;
 
     }
+    @Override
+    public String toString() {
+        return "Utilisateur{" +"id=" + getId() +", nom='" + getNom() + '\'' +", livresDispo=" + getlivresDispo() +'}';
+    }
 
 }

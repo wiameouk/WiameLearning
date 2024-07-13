@@ -1,5 +1,4 @@
-
-public class Livre  {
+public class Livre {
     private int id;
     private String titre;
     private String auteur;
@@ -39,11 +38,17 @@ public class Livre  {
     public void setAuteur(String auteur) {
         this.auteur = auteur;
     }
+
     public void setDisponibilite(boolean disponibilite) {
         this.disponibilite = disponibilite;
     }
-
    
+
+    @Override
+    public String toString() {
+        return "Livre{" +"id=" + getId() +", titre='" + getTitre()+ " " +" auteur=" + getAuteur() + " " +", disponibilite=" + isDisponible() +'}';
+    }
 }
+
 
 
