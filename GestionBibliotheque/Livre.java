@@ -42,13 +42,9 @@ public class Livre {
     public void setDisponibilite(boolean disponibilite) {
         this.disponibilite = disponibilite;
     }
-   
 
     @Override
     public String toString() {
-        return "Livre{" +"id=" + getId() +", titre='" + getTitre()+ " " +" auteur=" + getAuteur() + " " +", disponibilite=" + isDisponible() +'}';
+        return "Livre{" + "id=" + id + ", titre='" + titre + " " + ", auteur='" + auteur + " " + ", disponibilite=" + disponibilite + '}';
     }
 }
-
-
-

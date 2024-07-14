@@ -19,16 +19,17 @@ public class Utilisateur {
         return nom;
     }
 
-    public ArrayList<Livre> getlivresDispo() {
+    public ArrayList<Livre> getLivresDispo() {
         return livresDispo;
     }
-    public void setNom(String nom){
-        this.nom=nom;
 
+    public void setNom(String nom) {
+        this.nom = nom;
     }
+
     @Override
     public String toString() {
-        return "Utilisateur{" +"id=" + getId() +", nom='" + getNom() + '\'' +", livresDispo=" + getlivresDispo() +'}';
+        return "Utilisateur{" + "id=" + id + ", nom='" + nom + " " + ", livresDispo=" + livresDispo + '}';
     }
-
 }
+
