@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class wrtreadfile{
+public class file1{
     public static void main(String[] args) {
         Path fileSource = Paths.get("info.txt");
         Path fileDestination = Paths.get("new.txt");
@@ -35,3 +35,5 @@ public class wrtreadfile{
         }
     }
 }
+    
+
