@@ -5,7 +5,7 @@ import java.util.regex.*;
 public class AnalyseLog {
 
     public static void main(String[] args) {
-        String cheminFichier = "desktop/info.txt";
+        String cheminFichier = "info.txt";
         Map<String, Integer> comptIp = new HashMap<>();
         
         try (BufferedReader lecteur = new BufferedReader(new FileReader(cheminFichier))) {
